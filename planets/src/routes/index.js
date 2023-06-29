@@ -4,6 +4,6 @@ const middlewares = require("../middlewares");
 
 const router = Router();
 
-router.get("/", middlewares.planetValidation ,controllers.getPlanets);
+router.get("/planets", middlewares.planetValidation ,controllers.getPlanets);
 
 module.exports = router;
